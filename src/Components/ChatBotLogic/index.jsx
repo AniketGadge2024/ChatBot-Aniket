@@ -52,18 +52,32 @@ const LogicSteps=[
       {
         id: 'Available_courses',
         message: 'Here is your answer for Available_courses',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Course_details',
         message: 'Here is your answer for Course_details',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Enrollment_process',
         message: 'Here is your answer for Enrollment_process',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Course_Information'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
+
 
 
 
@@ -77,14 +91,26 @@ const LogicSteps=[
       {
         id: 'admission_deadlines',
         message: 'Here is your answer for admission_deadlines',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'exam_dates',
         message: 'Here is your answer for exam_dates',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-      
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Admission_Queries'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
       
@@ -99,19 +125,31 @@ const LogicSteps=[
       {
         id: 'Study_materials',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Assignment_help',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Exam_preparation_tips',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Academic_Support'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
 
@@ -126,19 +164,31 @@ const LogicSteps=[
       {
         id: 'Website_navigation',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Login_issues',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Accessing_online_classes',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Technical_Assistance'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
 
@@ -156,34 +206,46 @@ const LogicSteps=[
       {
         id: 'Faculty_details',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Campus_facilities',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Contact_information',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Scholarships',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Payment_plans',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Fee_structure',
         message: 'Here is your answer for Exam_preparation_tips',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'General_Information'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
 
@@ -198,14 +260,26 @@ const LogicSteps=[
       {
         id: 'Upcoming_events',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Recent_news_and_announcements',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-     
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Events_and_News'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
       {
@@ -220,19 +294,31 @@ const LogicSteps=[
       {
         id: 'Internship opportunities',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Job placement support',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Career counseling',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Career_Guidance'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
 
@@ -249,14 +335,26 @@ const LogicSteps=[
       {
         id: 'Reporting issues',
         message: 'Here is your answer for Study_materials',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
       {
         id: 'Providing feedback on courses or services',
         message: 'Here is your answer for Assignment_help',
-       trigger:'end_commmand'
+       trigger:'ask_another'
       },
-     
+      {
+        id:'ask_another',
+        message:'did you have any other question',
+        trigger:'menu'
+      },
+      {
+        id:'menu',
+        options:[
+          {value:'yes' , label:'Yes i have' ,trigger:'Feedback_and_Complaints'},
+          {value:'main menu', label:'Go to main menu' ,trigger:'2'},
+          {value:'No', label:'NO my doubt is clear' ,trigger:'end_commmand'}
+        ]
+      },
 
 
       {
