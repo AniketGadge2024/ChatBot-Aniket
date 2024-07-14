@@ -1,0 +1,10 @@
+.chat-box-cont{
+    width: 100px;
+    height: 100px;
+  
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    display: flex;
+}
